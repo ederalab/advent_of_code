@@ -1,7 +1,5 @@
-def countMeasurements1():
+def countMeasurements1(puzzle_input):
     count = 0
-    read_input = open('day_01_input.txt', 'r')
-    puzzle_input = read_input.readlines()
 
     first = puzzle_input[0]
     n = int(first.replace("\n", ""))
@@ -15,13 +13,8 @@ def countMeasurements1():
     return count
 
 
-print(countMeasurements1())
-
-
-def countMeasurements2():
+def countMeasurements2(puzzle_input):
     count = 0
-    read_input = open('day_01_input.txt', 'r')
-    puzzle_input = read_input.readlines()
 
     num = int(puzzle_input[0].replace("\n", "")) + int(puzzle_input[1].replace("\n", "")) + int(puzzle_input[2].replace("\n", ""))
     n = num
@@ -34,4 +27,9 @@ def countMeasurements2():
 
     return count
 
-print(countMeasurements2())
+
+if __name__ == '__main__':
+    read_input = open('day_01_input.txt', 'r')
+    puzzle_input = read_input.readlines()
+    print(countMeasurements1(puzzle_input))
+    print(countMeasurements2(puzzle_input))
