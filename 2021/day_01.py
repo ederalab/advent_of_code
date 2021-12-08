@@ -6,7 +6,7 @@ def countMeasurements1(puzzle_input):
 
     for line in puzzle_input:
         num = int(line.replace("\n", ""))
-        if num < n:
+        if num > n:
             count += 1
         n = num
 
