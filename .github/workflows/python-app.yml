@@ -33,5 +33,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with unittest
       run: |
-      python3 -m unittest day_01_test.py
+      python3 -m unittest advent_of_code/2021/day_01_test.py
 
